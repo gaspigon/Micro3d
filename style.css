@@ -5,7 +5,7 @@
 
 
 body{
-    background-color: rgba(222, 228, 200, 0.555);
+    background-image: linear-gradient(#D6DBDF , #F8F9F9);
 }
 
 /*   HEADER        */
@@ -73,7 +73,7 @@ ul {
 
 .img-3d{
     display: inline-block;
-    margin-right: 59%;
+    margin-right: 50%;
     width: 4%;
     height: 1%;
 }
@@ -95,7 +95,7 @@ ul li , a {
     padding: 1% 1%;
     height: fit-content;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     text-decoration: none;
     font-size: 30px;
     color: #ffffff;
@@ -103,6 +103,21 @@ ul li , a {
 
 }
 
+.sub-lista-productos{
+    position: absolute;
+    display: none;
+    margin: 3rem 0 0 ;
+    width: fit-content;
+    background: none;
+    font-weight: bolder;
+}
+
+
+
+.lista-prod:hover .sub-lista-productos{
+    display: block;
+    
+}
 
 
 .titulo{
@@ -159,9 +174,10 @@ h1{
 
 /*FUNCION PARA LINKS*/
 header nav li a:hover{
-    color: rgb(165, 150, 233);
+    color: rgb(50, 7, 241);
     transform: scale(1.08);
 }
+
 
 
 
@@ -207,7 +223,6 @@ gap: 20px;
 .grid-seis{
     grid-column-start: span 2;
 }
-
 
 
 
@@ -283,6 +298,7 @@ h3{
 
 .link-producto{
     color: navy;
+    justify-content: space-around;
 }
 /*MEDIA QUERY----------------------------------------------------------------*/
 @media only screen  and (max-width:390px) {
@@ -310,9 +326,9 @@ h3{
     width: 100%;
     justify-content: space-between;
     box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
-   
-
 }
+
+
 
 
 
@@ -334,7 +350,12 @@ h3{
     flex-direction: column;
     margin: 2%;
     justify-content: space-around;
+    
+
 }
+
+
+
 
 .mapa{
    display: flex;
@@ -353,10 +374,14 @@ h3{
 
 .link-footer{
     display: flex;
+    justify-content: space-around;
     margin: 1%;
     font-size: 34px;
     color: slateblue;
+    
 }
+
+
 .texto-link{
     display: flex;
     color: grey;
