@@ -164,7 +164,12 @@ header nav li a:hover{
 }
 
 
-
+/*++++++++++++++++++++++++ANIMACION TITULO IMAGENES+++++++++++++++++++++++++++++++++++++++++++*/
+.titulo-2:hover {
+    animation-name: animate__animated animate__bounceOut;
+    animation-delay: 1s;
+    transition: 3s;
+}
 
 
 
@@ -356,7 +361,20 @@ h3{
     margin: 1%;
     font-size: 34px;
     color: slateblue;
+    transition: all 0.5s;
+
 }
+
+/* ANIMACION LINKS REDES SOCIALES ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+#Nosotros:hover .box-1{
+    animation: animate__bounceInLeft ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/*FIN DE ANIMACION+++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 .texto-link{
     display: flex;
     color: grey;
