@@ -164,16 +164,6 @@ header nav li a:hover{
 }
 
 
-/*++++++++++++++++++++++++ANIMACION TITULO IMAGENES+++++++++++++++++++++++++++++++++++++++++++*/
-.titulo-2:hover {
-    animation-name: animate__animated animate__bounceOut;
-    animation-delay: 1s;
-    transition: 3s;
-}
-
-
-
-
 /*SECTION IMAGENES*/
 .galeria-imagenes{
 display: grid;
