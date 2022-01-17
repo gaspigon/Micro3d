@@ -170,7 +170,39 @@ h1{
 }
 
 
+.caja-scroll{
+   display: inline-block;
+   text-align: center;
+   position: relative;
+   top: 290px;
+   right: 360px;
+   animation: caja-parrafo 0.6s;
+   animation-iteration-count: infinite;
+ 
 
+}
+
+.caja-parrafo{
+    font-size: 80px;
+    color: white;
+}
+
+/*+++++++++++++++++++++TRANSFORMACION AL HEADER ICONO +++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@keyframes caja-parrafo {
+    0%{ transform: translateY(10px);}
+
+    25%{transform: translateY(20px);}
+
+    50%{transform: translateY(30px);}
+
+    75%{transform: translateY(40px);}
+
+    100%{transform: translateY(50px);}
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++FIN DE TRANSFORMACION+++++++++++++++++++++++*/
 
 /*FUNCION PARA LINKS*/
 header nav li a:hover{
@@ -386,6 +418,11 @@ h3{
     
 }
 
+.box-1:hover{
+    animation-name: animate__bounceInLeft;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
 
 .texto-link{
     display: flex;
