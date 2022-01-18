@@ -290,7 +290,8 @@ gap: 20px;
 
 @media only screen and (max-width:500px) {
     .linea-uno{
-        font-size: 10px;
+        font-size: 15px;
+        font-weight: bolder;
         width: 7em;
     }
 
