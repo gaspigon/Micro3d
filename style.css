@@ -395,9 +395,9 @@ h3{
     }
     
     .text-muted{
-       display: inline;
+         display: inline;
         font-size: 1rem;
-        margin-left: 4rem;
+        margin-left: 2rem;
         text-decoration: none;
         
     }
@@ -412,7 +412,7 @@ h3{
 
 .link-footer{
     display: inline-block;
-    margin: 1rem;
+    margin: 0.5rem;
     font-size: 2.2rem;
     color: rgba(92, 91, 91, 0.753);
 }
