@@ -12,13 +12,24 @@ body{
 
 
 .img-icono1{
-    display: inline-block;
-    position: absolute;
-    margin-top: 5%;
-    width: 15em;
-    height: 10em;
+    width: 15rem;
 }
 
+
+.box-container{
+    padding: 0;
+    margin: 0;
+}
+
+.box-imagen{
+    background-image: url("img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 12%;
+  
+}
+
+/*
 .menu-container{
     
     display: inline-block;
@@ -33,22 +44,23 @@ body{
     box-shadow: 0 0 5px 0 rgba(0,0,0,.099);
 }
 
-/* MEDIA QUERY HEADER, mOBILE STYLE*/
-/*REGLA @media (MEDIATYPE): /  (MEDIA FEATURE):propiedad css*/
-@media only screen and (max-width: 390px){
+*/
 
-    body{
-        width: 100%;
-    }
 
-    .menu-container{
-       width: 100%;
-        
-    }
+
+.nav-link{
+    font-size: x-large;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+
     
 }
 
-
+.nav-link:hover{
+    color: tomato;
+}
+/*
 ul {
     display: flex;
     justify-content: right;
@@ -70,6 +82,7 @@ ul {
     height: fit-content;
     box-shadow: 0 0 20px 0 rgba(199, 110, 110, 0.8);
 }
+*/
 
 .img-3d{
     display: inline-block;
@@ -78,18 +91,10 @@ ul {
     height: 1%;
 }
 
-/*MEDIA QUERY*/
-@media only screen and (max-width:400px){
- 
-    .mapa{
-        visibility: hidden;
-    }
 
-    .menu-opciones{
-        display: none;
-    }
-}
 
+
+/*
 ul li , a {
     display: flex;
     padding: 1% 1%;
@@ -112,75 +117,78 @@ ul li , a {
     font-weight: bolder;
 }
 
+*/
 
 
-.lista-prod:hover .sub-lista-productos{
-    display: block;
-    
-}
 
 
-.titulo{
-    display: inline-block;
-    height: fit-content;
-    width: fit-content;
-    margin: 15% 0 0 33%;
-}
+
+
 
 h1{
-    
-    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 
 }
-/*MEDIA QUERY*/
-@media only screen and (max-width: 390px) {
+
+
+
+.parrafo {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+
+}
+
+.caja-scroll{
+    
+    animation: caja-parrafo 0.6s;
+    animation-iteration-count: infinite;
+    margin-top: 6%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+/*++++++++++++++++++MEDIA QUERY+++++++++++++++++++++++++++*/
+
+@media only screen and (max-width: 800px) {
     h1{
-        font-size: 50px;
+        font-size: 3rem;
        
     }
     
-    .titulo{
-      margin-right: 32%;
-      width: fit-content;
+  .parrafo{
+      font-size: 1rem;
     }
-    
+
     .img-icono1{
-       width: 200px;
+        width: 8rem;
     }
-}
 
-.parrafo {
-    font-size: 3em;
-    color: white;
-    margin: 0 0 0 16%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-
-}
-
-/*MEDIA QUERY*/
-@media only screen and (max-width:390px) {
-    .parrafo{
-        font-size: 20px;
+    .box-imagen{
+        
+        background-size: cover;
+        background-position: center;
+        
+        
     }
-    
+
+    .caja-scroll{
+        display: none;
+    }
+
+
 }
 
 
-.caja-scroll{
-   display: inline-block;
-   text-align: center;
-   position: relative;
-   top: 290px;
-   right: 360px;
-   animation: caja-parrafo 0.6s;
-   animation-iteration-count: infinite;
- 
-
-}
 
 .caja-parrafo{
     font-size: 80px;
@@ -236,14 +244,7 @@ gap: 20px;
     
 } 
 
-/*  MEDIA QUERY*/
-@media only screen and (max-width: 390px) {
-    .galeria-imagenes{
-        width: 200%;
-        grid-auto-rows: 150px;
-    }
-    
-}
+
 
 .imagen{
     width: 100%;
@@ -274,13 +275,17 @@ gap: 20px;
 }
 
 /*MEDIA QUERY*/
-@media only screen and (max-width:390px) {
-    .titulo-2{
-        font-size: 20px;
-        width: 200%;
+
+@media only screen and (max-width:500px) {
+    .galeria-imagenes{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        grid-auto-rows: 100px;
+        width: max-content;
     }
     
 }
+
 
 .box{
    transition: all 300ms;
@@ -291,65 +296,54 @@ gap: 20px;
 }
 
 
+
 /*FIN SECTION IMAGENES*/
 
 
-
+.img-prod{
+   width: 100%;
+   height: 20rem;
+    object-fit: cover;
+}
 
 /*SECTION PRODUCTOS -- SE COMPARTIERON MUCHOS ESTILOS CON 
 SECTION DE IMAGENES*/
 
-section#Productos {
-    display: grid;
-    margin: 1%;
 
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-    
-    
-}
 
 h3{
+    margin-top: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 }
-/*MEDIA QUERY*/
-@media only screen  and (max-width:390px) {
-    #Productos{
-        width: 200%;
-    }
 
-}
+
 
 .texto{
     display: flex;
     justify-content: center;
-    margin-bottom: 3%;
+    
 }
+
 
 .box-producto{
     box-shadow: 0 0 5px 0 rgba(0,0,0,.55);
-    padding-bottom: 20%;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+   
 }
 
 
 .link-producto{
     color: navy;
+    display: flex;
     justify-content: space-around;
-}
-/*MEDIA QUERY----------------------------------------------------------------*/
-@media only screen  and (max-width:390px) {
-    .box-producto{
-        padding-bottom: 40%;
-    }
-
-    .link-producto{
-        font-size: 20px;
-    }
-    
+    font: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-top: 1.2rem;
 }
 
-/* FIN MEDIA QUERY ----------------------------------------------------*/
 
 .link-producto:hover{
     color: purple;
@@ -357,7 +351,12 @@ h3{
 /*FIN SECTION PRODUCTOS*/
 
 
+
+
+
+
 /*FOOTER*/
+/*
 #Nosotros{
     display: flex;
     width: 100%;
@@ -365,42 +364,25 @@ h3{
     box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
 }
 
+*/
 
 
-
-
-
-/* MEDIA QUERY------------------------------*/
-@media only screen and (max-width:390px) {
-    #Nosotros{
-        width: 200%;
-    }
-
-}
-
-
-/*-------------------------------------------------*/
-
-
-.box-1{
-    display: flex;
-    flex-direction: column;
-    margin: 2%;
-    justify-content: space-around;
-    
-
-}
 
 
 
 
 .mapa{
-   display: flex;
-   flex-wrap: wrap;
-   right: 0;
-   width: 700px;
-   height: 300px;
-   margin: 1%;
+   
+    width: 50rem;
+   height: 20rem;
+ 
+}
+
+@media only screen and (max-width:500px) {
+    .mapa{
+        width: 25rem;
+    }
+    
 }
 
 .logo-footer{
@@ -411,11 +393,15 @@ h3{
 
 .link-footer{
     display: flex;
-    justify-content: space-around;
-    margin: 1%;
-    font-size: 34px;
-    color: slateblue;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: rgb(75, 63, 155);
+    text-decoration: none;
     
+}
+
+.texto-link{
+    margin-left: 2rem;
 }
 
 .box-1:hover{
@@ -424,11 +410,4 @@ h3{
     animation-duration: 2s;
 }
 
-.texto-link{
-    display: flex;
-    color: grey;
-}
 
-.link-3{
-    padding: 0 13%;  
-}
