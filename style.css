@@ -411,6 +411,21 @@ h3{
 .link-producto:hover{
     color: purple;
 }
+
+
+
+/* MEDIA QUERY PARA ACTIVAR CAROUSEL SOLO EN TELEFONO MOBIL*/
+@media only screen and (max-width: 600px) {
+
+    #Productos{
+        display: none;
+    }
+
+    #carouselExampleIndicators{
+        display: block;
+        box-shadow: none;
+    }
+}
 /*FIN SECTION PRODUCTOS*/
 
 
