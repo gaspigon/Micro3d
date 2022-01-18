@@ -374,6 +374,7 @@ SECTION DE IMAGENES*/
 
 
 
+
 h3{
     margin-top: 1rem;
     font-family: 'Roboto', sans-serif;
@@ -414,18 +415,6 @@ h3{
 
 
 
-/* MEDIA QUERY PARA ACTIVAR CAROUSEL SOLO EN TELEFONO MOBIL*/
-@media only screen and (max-width: 600px) {
-
-    #Productos{
-        display: none;
-    }
-
-    #carouselExampleIndicators{
-        display: block;
-        box-shadow: none;
-    }
-}
 /*FIN SECTION PRODUCTOS*/
 
 
