@@ -279,9 +279,11 @@ gap: 20px;
 @media only screen and (max-width:500px) {
     .galeria-imagenes{
         grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
         gap: 10px;
         grid-auto-rows: 100px;
-        width: max-content;
+        grid-auto-columns: min-content;
+        
     }
     
 }
@@ -380,7 +382,7 @@ h3{
 
 @media only screen and (max-width:500px) {
     .mapa{
-        width: 25rem;
+        width: 22rem;
     }
     
 }
