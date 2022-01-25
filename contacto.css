@@ -18,62 +18,43 @@ header{
 
 h1{
     font-size: 60px;
-    color: white;
-    margin: 8% 0 0 0;
+    color: rgb(3, 19, 53);
+    margin: 4% 0 0 0;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 }
 
-#Formulario{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    
-
-}
-
-.box{
-    display: flex;
-    flex-wrap: wrap;
-    width: 25%;
-    flex-direction: column;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+.container{
+    background-color: rgba(171, 184, 224, 0.788);
+    width: 30rem;
     border-radius: 20px;
-    padding: 1%;
-    margin: 2%;
-    background: linear-gradient(to bottom, rgb(226, 230, 235) , white);
+    
+    
+    
+    
     
 }
 
-.campo{
-    width: 100%;
-    margin-top: 5px;
-    height: 50px;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 5%;
-    background-color: rgba(250, 246, 231, 0.89);
-    border-radius: 10px ;
-}
-
-input::placeholder{
-    color: rgb(170, 165, 165);
-    font-size: 15px;
-}
-
-input{
-    height: 40px;
-    
-    border: 1px solid grey;
-    -moz-border-radius: 10px ;
+.boton{
+    position: relative;
+    margin-left: 11rem;
+    margin-bottom: 1rem;
     
 }
 
-textarea{
-    display: flex;
-    width: 100%;
-    background-color:  rgba(250, 246, 231, 0.89);
-    border-radius: 10px;
-    
+.link-footer{
+    display: inline-block;
+    margin: 0.5rem;
+    font-size: 2rem;
+    color: rgba(92, 91, 91, 0.753);
+}
+
+
+.link{
+    font-size: 1.5rem;
+    transition: all 0.2s;
+}
+
+.link:hover{
+    transform: scale(1.1);
 }

@@ -210,6 +210,20 @@ h1{
     100%{transform: translateY(50px);}
 }
 
+.link-whats{
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    bottom: 1rem;
+    width: 6rem;
+    height: 5rem;
+    transition: all 0.4s;
+}
+
+.link-whats:hover{
+    transform: scale(1.6);
+}
+
 
 /*+++++++++++++++++++++++++++++++++++++++FIN DE TRANSFORMACION+++++++++++++++++++++++*/
 
